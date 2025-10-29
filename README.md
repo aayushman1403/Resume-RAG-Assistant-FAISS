@@ -9,17 +9,21 @@ That's clear! I'll provide the complete, detailed README.md in a clean, point-ba
 The RAG pipeline operates in two phases:
 1) Ingestion/Indexing: Documents are converted into numerical representations called vector embeddings. These vectors are stored and indexed in the FAISS vector database for efficient search.
 2) Query & Generation:
-The user's question is also converted into a vector.
-A similarity search retrieves the most relevant document chunks (context) from the FAISS index.
+The user's question is also converted into a vector.A similarity search retrieves the most relevant document chunks (context) from the FAISS index.
 This context is injected into the prompt and sent to the LLM (TinyLlama), which synthesizes a grounded answer.
 
 # 🎯 Real-Life Use Cases
 The RAG pattern is critical for applications demanding factual accuracy and access to private or time-sensitive data:
 Enterprise Knowledge Management 🏢: Querying private company manuals, HR policies, or internal research reports.
+
 Customer Service and Support 📞: Powering chatbots with up-to-date product specifications and service FAQs.
+
 Financial and Legal Compliance ⚖️: Generating responses based on specific regulatory documents, ensuring all facts are verifiable.
+
 Real-Time Financial Signal Notifier 💰: Analyzing real-time news sentiment and technical data (like RSI or Moving Average crossovers) to issue grounded Bullish or Bearish trading alerts.
 # 💬 Usage Examples
 Query: "What is the work experience mentioned in the resume?"
+
 Query: "Can you list all the key projects and their technologies?"
+
 Query: "What programming languages does the candidate know?"
